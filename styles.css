@@ -1,0 +1,88 @@
+
+/* body {
+    font: Helvetica;
+    overflow: auto;
+    background-color: black;
+    color: white;
+    margin: default;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    translate: -50% -50%;
+} */
+
+.center {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    /*font-family: Helvetica, sans-serif;*/
+    font-family: Roboto;
+    font-size: 18px;
+    overflow: auto; /* Ensure scrolling works */
+    /*background-color: black;*/
+    background-color:#131415;
+    color: white;
+    margin: 0; /* Set margin to 0 to avoid layout issues */
+}
+
+/* #list{
+    position: fixed;
+    left: 15%;
+    top: 45%;
+    translate: -50% -50%;
+    overflow: auto;
+} */
+#list {
+    position: relative; /* Allow normal document flow */
+    margin: auto; /* Centering, if needed */
+    padding: 20px; /* Add spacing inside the element */
+    overflow: auto; /* Allow internal scrolling if necessary */
+    font-size: 16px;
+}
+
+
+
+ a{
+    /*color: rgb(230, 14, 108);*/
+    color: white;
+    text-decoration-thickness: 1px;
+
+} 
+
+a:hover{
+    color: #666666;
+}
+
+#socials{
+    color: rgb(230, 14, 108);
+}
+
+#socials:hover{
+    color: #0B6F9D;
+}
+
+
+
+
+
+i{
+font-size: 2em;
+}
+
+
+/* footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #202631;
+    text-align: center;
+    margin: 0 auto;
+    height: 12.5%;
+  } */
+
+  

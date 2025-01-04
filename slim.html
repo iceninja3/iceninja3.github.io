@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Thoughts</title>
+  <link rel="Shortcut Icon" type="image/x-icon" href="https://slim.computer/blug/1f344.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="alternate" type="application/atom+xml" title="Feed" href="https://slim.computer/blug/feed.atom">
+
+  <meta property="og:title" content="Sliminal Zone" />
+  <meta property="og:image" content="https://slim.computer/assets/img/headshot24.jpg" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="sliminality" />
+  <meta name="twitter:title" content="Sliminal Zone" />
+
+  <link rel="stylesheet" href="https://slim.computer/blug/style.css">
+  <link rel="preload" href="https://slim.computer/blug/prism-coy.css" as="style">
+  <link rel="preload" href="https://slim.computer/blug/prism-tomorrow.css" as="style">
+  <link id="prism" rel="stylesheet" href="https://slim.computer/blug/prism-coy.css">
+  <link rel="stylesheet" href=https://slim.computer/blug/katex.min.css>
+</head>
+<body>
+  <script>0</script>
+  <main class="p85df93d6">
+    <header>
+      <a href="index.html">Home</a>
+      <button id="toggle-btn" aria-label="enable dark theme">🌙</button>
+    </header>
+    <div class="title-row">
+            <!-- <img width="32" height="32" alt="🍄" src="https://slim.computer/blug/1f344.png" /> -->
+            <h1>Thoughts</h1>
+          </div>
+    <div class="text" id="bfa3c3614">
+        Somewhat random ramblings about somewhat random things!
+  <div class="children"></div>
+</div><ul id="bfbe364ec"><li id="b3da38b86">
+  <div class="list-item">
+    <a href="https://slim.computer/blug/chaotic-learning.html">
+  
+  The unreasonable effectiveness of chaotic knowledge acquisition</a> — June 19, 2024
+  </div>
+  
+</li>
+<li id="bd650b9f3">
+  <div class="list-item">
+    <a href="https://slim.computer/blug/finally.html">
+  
+  Look mom I have a blog now</a> — June 19, 2024
+  </div>
+  
+</li></ul>
+    
+  </main>
+  <script>const stylesheet = /** @type {HTMLElement} */ (
+document.getElementById("prism")
+);
+const toggleBtn = /** @type {HTMLElement} */ (
+document.getElementById("toggle-btn")
+);
+
+/**
+* Set the theme to either light or dark.
+* @param {boolean} isDark
+*/
+function setTheme(isDark) {
+if (isDark) {
+localStorage.setItem("theme", "dark");
+document.body.classList.add("dark");
+toggleBtn.innerHTML = "☀️";
+toggleBtn.setAttribute("aria-label", "enable light theme");
+stylesheet.setAttribute("href", "/prism-tomorrow.css");
+} else {
+localStorage.setItem("theme", "light");
+document.body.classList.remove("dark");
+toggleBtn.innerHTML = "🌙";
+toggleBtn.setAttribute("aria-label", "enable dark theme");
+stylesheet.setAttribute("href", "/prism-coy.css");
+}
+}
+
+function toggleTheme() {
+if (localStorage.getItem("theme") === "dark") {
+setTheme(false);
+} else {
+setTheme(true);
+}
+}
+
+if (!localStorage.getItem("theme")) {
+const osTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+? "dark"
+: "light";
+localStorage.setItem("theme", osTheme);
+}
+
+toggleBtn.addEventListener("click", (e) => {
+e.preventDefault();
+toggleTheme();
+});
+setTheme(localStorage.getItem("theme") === "dark");
+</script>
+</body>
+</html>
