@@ -437,3 +437,62 @@ body.blog-body {
         margin-bottom: 30px;
     }
 }
+
+/* Category Tags */
+.cat-tag {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #444;
+    border-radius: 50px;
+    padding: 2px 10px;
+    font-size: 0.85em;
+    /* Adjusted slightly for better legibility */
+    margin-right: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Subtle background */
+}
+
+.cat-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* Category Colors */
+.cat-color-workflow {
+    background-color: #1E90FF;
+}
+
+/* Blue */
+.cat-color-media {
+    background-color: #FFA500;
+}
+
+/* Orange */
+.cat-color-project {
+    background-color: #32CD32;
+}
+
+/* Green */
+.cat-color-life {
+    background-color: #8A2BE2;
+}
+
+/* Purple */
+.cat-color-food {
+    background-color: #DC143C;
+}
+
+/* Red */
+.cat-color-rec {
+    background-color: #FFD700;
+}
+
+/* Gold for Recommendation */
+.cat-color-commentary {
+    background-color: #FF69B4;
+}
+
+/* Pink */
