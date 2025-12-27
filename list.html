@@ -73,7 +73,7 @@
                     <li>One Night Ultimate Werewolf</li>
                     <li>Uno</li>
                 </ul>
-<br>
+                <br>
                 <!-- <li>Card Games</li> -->
                 <ul>
                     <li> <a href="https://en.wikipedia.org/wiki/James_Bond_(card_game)">James Bond (2 or 4 player)</a>
@@ -90,6 +90,14 @@
         </div>
 
     </main>
+
+    <footer
+        style="text-align: center; font-size: 12px; color: rgba(255, 255, 255, 0.5); padding: 20px 0; margin-top: 40px;">
+        &copy; <span id="year"></span> Vishal Dandamudi
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <script>
         var acc = document.getElementsByClassName("accordion");
